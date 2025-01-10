@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
+    <title>Timer</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -19,8 +19,8 @@
           </a>
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="nav-link {=$highlight-act}" href="./1-gallery.html"
-                >Gallery</a
+              <a class="nav-link {=$highlight-act}" href="./1-timer.html"
+                >Timer</a
               >
             </li>
             <li class="nav-item">
@@ -36,9 +36,30 @@
     <main>
       <div class="container">
         <h1 class="main-title">
-          <span class="main-title-gradient">Welcome</span> to page Gallery
+          <span class="main-title-gradient">Welcome</span> to page Timer
         </h1>
-        <ul class="gallery container-task"></ul>
+        <div class="page-timer">
+          <input type="text" id="datetime-picker" />
+          <button type="button" data-start disabled>Start</button>
+          <div class="timer">
+            <div class="field">
+              <span class="value" data-days>00</span>
+              <span class="label">Days</span>
+            </div>
+            <div class="field">
+              <span class="value" data-hours>00</span>
+              <span class="label">Hours</span>
+            </div>
+            <div class="field">
+              <span class="value" data-minutes>00</span>
+              <span class="label">Minutes</span>
+            </div>
+            <div class="field">
+              <span class="value" data-seconds>00</span>
+              <span class="label">Seconds</span>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -58,6 +79,6 @@
       </div>
     </footer>
 
-    <script src="./js/1-gallery.js" type="module" defer></script>
+    <script src="./js/1-timer.js" type="module" defer></script>
   </body>
 </html>

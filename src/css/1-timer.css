@@ -1,0 +1,94 @@
+@import 'flatpickr/dist/flatpickr.min.css';
+@import 'izitoast/dist/css/iziToast.min.css';
+
+.page-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 250px;
+  margin: 25px auto;
+  padding: 50px 100px;
+  background-color: rgba(155, 221, 149, 0.699);
+  background-image: linear-gradient(115deg, #a767e5, #12bcfe);
+  background-size: 100% 100%;
+  z-index: 999;
+  position: relative;
+  border: 5px solid transparent;
+  border-radius: 25%;
+  animation: gradientMove 5s infinite linear, borderAnimation 5s infinite linear;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-color: #4fcf70;
+  }
+  25% {
+    border-color: #fad648;
+  }
+  50% {
+    border-color: #a767e5;
+  }
+  75% {
+    border-color: #12bcfe;
+  }
+  100% {
+    border-color: #44ce7b;
+  }
+}
+
+#datetime-picker {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button[data-start] {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button[data-start]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.value {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.label {
+  font-size: 16px;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
