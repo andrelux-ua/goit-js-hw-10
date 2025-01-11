@@ -1,0 +1,81 @@
+@import 'izitoast/dist/css/iziToast.min.css';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 400px;
+  margin: 25px auto;
+  background-color: rgba(155, 221, 149, 0.699);
+  background-image: linear-gradient(115deg, #a767e5, #12bcfe);
+  background-size: 100% 100%;
+  padding: 25px 30px;
+  border-radius: 8px;
+}
+
+label {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+input[type='number'] {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+input[type='number']:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+  padding: 0 15px 15px;
+}
+
+legend {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+label input[type='radio'] {
+  margin-right: 10px;
+  accent-color: #007bff;
+}
+
+button[type='submit'] {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007bff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type='submit']:hover {
+  background-color: #0056b3;
+}
+
+button[type='submit']:active {
+  background-color: #00408d;
+}
+
+input:invalid {
+  border-color: #fc1900;
+}
+
+input:valid {
+  border-color: #2ecc71;
+}
